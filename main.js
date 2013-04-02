@@ -1,5 +1,6 @@
 $(function () {
 
+	// Initial setup
 	$('center table tr').each(function () {
 
 		// Find the first table row of each project
@@ -7,7 +8,7 @@ $(function () {
 
 		if (matches) {
 			// Tag the row by the serial number
-			$(this).data('cfnfyp-index', matches[1])
+			$(this).attr('data-cfnfyp-index', matches[1])
 
 			// Add buttons
 			var $td = $(this).find('td').last()
